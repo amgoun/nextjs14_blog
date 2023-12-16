@@ -2,26 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  padding:0;
+  margin: 0;
+  @apply bg-white text-black  
+
 }
+h1 {
+  font-family: "Koh_Santepheap";
+  @apply font-bold capitalize 
+}
+.p_regular {
+   @apply text-[16px] text-[#939393] leading-[23px] py-2 mt-4
+}
+.mobile_nav {
+@apply py-4 px-8 uppercase font-extrabold hover:bg-white rounded transition-opacity
+}
+
+
